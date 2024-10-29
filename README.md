@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Lucius AI Action
-        uses: testingmavens/lucius-ai-action@v1.0.4
+        uses: testingmavens/lucius-ai-action@v1.0.2
         id: run_lucius_ai
         with:
           test_id: 'my-test-id'
