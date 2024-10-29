@@ -1,0 +1,26 @@
+name: 'Lucius AI Action'
+description: 'A GitHub Action to run tests using Lucius AI'
+author: 'testingmavens'
+
+inputs:
+  test_id:
+    description: 'ID of the test to be run.'
+    required: true
+    default: ''
+  
+  token:
+    description: 'The token required to access the tool.'
+    required: true
+    default: ''
+
+outputs:
+  result:
+    description: 'A message that includes information about the status of the run.'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'play'
+  color: 'blue'
