@@ -6,7 +6,7 @@ import requests
 # Get input from environment variables
 # These ENV vars are set by github actions based on action.yml
 test_id = os.getenv("INPUT_TEST_ID", "")
-cj_token = os.getenv("INPUT_TOKEN", "")
+lucius_ai_token = os.getenv("INPUT_TOKEN", "")
 MAX_FETCHES = 10
 
 def run() -> tuple[bool, str]:
@@ -17,11 +17,11 @@ def run() -> tuple[bool, str]:
             - The first element says whether the test run was successful or not.
             - The second element is a message shown in the Github output.
     """
-    if not (test_id and cj_token):
+    if not (test_id and lucius_ai_token):
         return False, "Failed: All required fields were not provided."
 
     headers = {
-        "Authorization": f"Bearer {cj_token}",
+        "Authorization": f"Bearer {lucius_ai_token}",
         "Content-Type": "application/json"
     }
 
