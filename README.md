@@ -22,8 +22,8 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Run CJ Action
-        uses: testingmavens/lucius-ai-action@v1.0.1
+      - name: Run Lucius AI Action
+        uses: testingmavens/lucius-ai-action@v1.0.3
         id: run_lucius_ai
         with:
           test_id: 'my-test-id'
