@@ -27,5 +27,5 @@ runs:
   image: 'Dockerfile'
 
 branding:
-  icon: 'cloud-lightning'
+  icon: 'play'
   color: 'blue'
