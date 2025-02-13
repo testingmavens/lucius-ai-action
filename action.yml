@@ -5,11 +5,16 @@ author: 'testingmavens'
 inputs:
   test_id:
     description: 'ID of the test to be run.'
-    required: true
+    required: false
     default: ''
   
-  token:
-    description: 'The token required to access the tool.'
+  test_suite_id:
+    description: 'ID of the test suite to be run.'
+    required: false
+    default: ''
+  
+  service_account_key:
+    description: 'Key to the service account that will run the test.'
     required: true
     default: ''
 
